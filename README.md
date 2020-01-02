@@ -11,7 +11,7 @@ es muy útil saber cómo construir este tipo de componente.<br>
 
 ## 
 <p align="center">
-  <img align="center" src="https://media.giphy.com/media/hrFOrCYxyH9INWxIYU/giphy.gif" alt="screen">
+  <img align="center" src="https://media.giphy.com/media/WUU278S7SQaJF0Eb9c/giphy.gif" alt="screen">
 </p>
 
 ##

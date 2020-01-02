@@ -1,0 +1,103 @@
+body {
+    display: grid;
+    place-items: center;
+    background: #323133;
+    min-height: 100vh;
+}
+  
+body #phone {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: #a0cecb;
+    font-size: 0;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+  
+body #phone .tab {
+    position: relative;
+}
+
+body #phone .tab .icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 3rem 1fr 1fr;
+    place-items: center;
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    left: 1rem;
+    right: 1rem;
+    height: 12.5%;
+    font-size: 1.5rem;
+}
+
+body #phone .tab .icons a {
+    color: inherit;
+    text-decoration: none;
+}
+
+body #phone .tab .circle {
+    z-index: 2;
+    position: absolute;
+    bottom: 8.9285714286%;
+    right: 42.3076923077%;
+    left: 42.3076923077%;
+    height: 7.1428571429%;
+    background: linear-gradient(to top, #4F91E2, #65A4F2);
+    border-radius: 1.5rem;
+    transition: 0.25s cubic-bezier(0.25, 0, 0, 1), bottom 0.25s cubic-bezier(0.5, 0, 0.25, 1);
+}
+
+body #phone .tab .circle i {
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    display: grid;
+    place-items: center;
+    font-size: 1.5rem;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 100%;
+    color: white;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transition: 0.25s ease;
+    cursor: pointer;
+}
+
+body #phone .tab svg {
+    width: 312px;
+}
+  
+body #phone .tab svg path {
+    transition: 0.25s cubic-bezier(0.25, 0, 0, 1);
+    fill: white;
+}
+  
+body #phone .tab:not(.open) .circle {
+    cursor: pointer;
+}
+  
+body #phone .tab:not(.open) svg path {
+    transition-delay: 0.015s;
+}
+  
+body #phone .tab.open .circle {
+    bottom: 16.0714285714%;
+    right: 7.6923076923%;
+    left: 7.6923076923%;
+    height: 53.5714285714%;
+    transition: 0.25s cubic-bezier(0.25, 0, 0, 1), bottom 0.25s cubic-bezier(0.1, 0.1, 0, 1);
+    transition-delay: 0.015s;
+}
+  
+body #phone .tab.open .circle i {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+body #phone .tab.open svg path {
+    d: path("M287.1 784c-18.4 0-37.1 0-53.1 0 -12.4 0-12.6 0-26 0s-13.6 0-26 0c-18 0-34.8 0-53.1 0H0v112h416V784H287.1z");
+}
+  
